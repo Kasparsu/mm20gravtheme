@@ -1,0 +1,12 @@
+name: Mytheme
+slug: mytheme
+type: theme
+version: 0.1.0
+description: My cool theme
+icon: home
+author:
+  name: Kaspar Suursalu
+  email: kasparsu@gmail.com
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }

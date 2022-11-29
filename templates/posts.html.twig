@@ -1,0 +1,14 @@
+{% extends 'partials/layout.html.twig' %}
+{% block content %}
+    {% for post in page.children %}
+        <div class="card mt-3">
+            <div class="card-body">
+                <h4 class="card-title">{{ post.title }}</h4>
+                <p class="card-content">
+                    {{ post.summary|raw }}
+                </p>
+                <a href="{{ post.url }}">Read more</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

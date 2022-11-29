@@ -1,0 +1,15 @@
+{% extends 'partials/layout.html.twig' %}
+{% block content %}
+    <div class="row">
+        {% for feature in header.featured %}
+        <div class="col">
+            <div class="card mt-3">
+                <img class="card-image" src="{{ page.media[feature.image].url }}" style="width: 400px">
+                <div class="card-body">
+                    <h4 class="card-title">{{ feature.name }}</h4>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

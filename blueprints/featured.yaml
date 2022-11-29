@@ -1,0 +1,25 @@
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        featured:
+          type: tab
+          title: 'Featured Items'
+          fields:
+            images:
+              type: pagemedia
+              label: Images
+            header.featured:
+              name: featured
+              type: list
+              label: 'Items'
+              fields:
+                .name:
+                  type: text
+                  label: 'Name'
+                .image:
+                  type: pagemediaselect
+                  label: 'Image url'
